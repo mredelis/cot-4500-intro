@@ -1,9 +1,5 @@
 import numpy as np
 
-# 1. Print a specific 3x3 matrix where a cell is 1 if i == j, else 0
-# 2. Print the 3x3 matrix from #1 and then add 3 to every cell where i ≠j
-# 3. Print the 3x3 matrix from #2 as a 3x2 by deleting the last column from the matrix created
-
 # Create a m x n matrix of zeros
 m, n = 3, 3
 matrix = np.zeros(shape=(m, n), dtype=int)
@@ -25,6 +21,5 @@ for i in range(m):
 print(matrix, '\n')
 
 # Delete last column
-matrix_del = np.delete(matrix, n-1, 1)
-
-print(matrix_del)
+matrix = np.delete(matrix, n-1, 1)
+print(matrix)
