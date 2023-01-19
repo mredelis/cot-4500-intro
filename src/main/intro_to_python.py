@@ -14,8 +14,8 @@ for i in range(m):
         if (i == j):
             matrix[i, j] = 1
 
-print('\nExercise 1\n')
 print(matrix)
+print('\n')
 
 # Fill non-diagonal with 3's
 for i in range(m):
@@ -23,11 +23,10 @@ for i in range(m):
         if (i != j):
             matrix[i, j] = 3
 
-print('\nExercise 2\n')
 print(matrix)
+print('\n')
 
 # Delete last column
 matrix_del = np.delete(matrix, n-1, 1)
 
-print('\nExercise 3\n')
 print(matrix_del)
